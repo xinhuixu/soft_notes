@@ -1,0 +1,58 @@
+161101
+
+extending html templates
+    {% extends "<TEMPLATE>" %} (jinja)
+in main.html, designate customizable section
+   {% block chogi %}
+   <h1>wa</h1>
+   {% endblock %}
+in extended.html
+   {% block chogi %}
+   <h2>wa danbeone neukkyeo</h2>
+   {% endblock %}
+
+161115
+
+cascading style sheets
+
+color is just text-color
+10px not 10 px
+
+inline css can be used to override stylesheet
+<TAG style="prop: val;"></TAG>
+
+161117
+
+identifier: class
+<h2 class="classname1 classname2"></h2>
+.classname1 {}
+
+identifier: id
+only once
+#idname {}
+can be used in <a>: <a href="#jumphere"></a>
+
+
+161128
+
+framework tip: link the .min css and js files
+
+jquery: js library used in many fw
+scripts: ORDER MATTERS:
+	 jquery THEN
+	 bootstrap because bs req jquery
+
+js location:
+   either in <head> or right before </body>, depends
+
+REST APIs
+     API (Application Program Interface)
+     published set of protocols that can be used to have your program interact with another program/service
+
+     REST (Representational State Transfer)
+     - APIS that transmit data back after receiving http[s] GET request
+     - returned data can be in html, xml, json, ...
+
+     example REST call:
+     api.nasa.gov(...)?api_key=(...)
+     
