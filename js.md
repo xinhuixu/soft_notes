@@ -26,6 +26,18 @@ js is structured like scheme: funcs are 1st-class objects, have utilies like any
   - functional pl
   - remember lambda
 b.addEL("click", function() { alert("ajsdgyf"); }); //anon function
+
 var f = function() {...};
 b.addEL("click",f); //NOT f(), not calling, but Adding
+
+>f
+function...
+>f()
+(fucntion actually runs)
+```
+```
+var f = function(e) {console.log(e)};
+b.addEl("click", f); //e or any other name is the event that triggered. contains att
+...{console.log(this)};
+
 ```
