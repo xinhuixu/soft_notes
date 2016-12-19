@@ -39,5 +39,18 @@ function...
 var f = function(e) {console.log(e)};
 b.addEl("click", f); //e or any other name is the event that triggered. contains att
 ...{console.log(this)};
+```
+
+##1219
+```
+list.childElementCount();
+```
+```
+var t0 = performance.now();
+...
+var t1 = performance.now();
+console.log((t1 - t0).toFixed(4)); //four places after
+//checks time
+
 
 ```
