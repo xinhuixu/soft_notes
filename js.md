@@ -66,7 +66,24 @@ using jquery for AJAX
   the jq library provides clean wrapper func for making AJAX calls
   ```
   $.ajax( <SETTINGS> );
+  $.ajax ({
+    url: '/foo',
+    type: 'GET',
+    data: "som data",
+    success: function(d) {
+              console.log(d);
+              }
+    });
   ```
   settings is an associative array {} containing all the information required to make the given ajax call
   - url: server target link
   - type: method
+  - data: data to be sent
+  - success: function to be called if server responds
+```
+@
+def upcase():
+  d = request.args.get
+  
+```
+###DISABLE CACHE IN NETWORK TAB CHROME DEV TOOL
