@@ -54,3 +54,19 @@ console.log((t1 - t0).toFixed(4)); //four places after
 
 
 ```
+##0111
+
+AJAX (Asynchronous Js And XML)
+A system of technologies which sends data to server without reloading a page or wait for server to acknowledge change.
+Js, html, DOM, xml
+send data to server using GET or POST and then catch data sent by the server in response
+xml was originally the only supported format
+
+using jquery for AJAX
+  the jq library provides clean wrapper func for making AJAX calls
+  ```
+  $.ajax( <SETTINGS> );
+  ```
+  settings is an associative array {} containing all the information required to make the given ajax call
+  - url: server target link
+  - type: method
