@@ -18,3 +18,21 @@ mongod is a server process running somewhere and you connect to it
   db1            db2
 collection  collection
 documents    documents
+
+0203
+
+$pip install pymongo
+from pymongo import MongoClient
+server = MongoClient(<IP>) #homer ip: 149.89.150.100
+#if loopback: 127.0.0.1
+db = server['mydb'] or db = server.mydb #both works
+
+students = db.students #students is a collection object not a db object
+
+!!!databases and collections are not created until a document has been added
+!!!BUT you still have to declare the colls frist
+students.count() #= 0
+
+add a document:
+    doc = {'name':'mlfao', 'numcats': 4, 'luckynums': [1,2,5]}
+    c.insert_one( doc )
