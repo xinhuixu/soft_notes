@@ -36,3 +36,32 @@ students.count() #= 0
 add a document:
     doc = {'name':'mlfao', 'numcats': 4, 'luckynums': [1,2,5]}
     c.insert_one( doc )
+
+0206
+
+peeps = col.find()
+peeps is a pymongo cursor! .find() will always give you a cursor obj
+for p in peeps:
+    print p # all the peepz
+
+.find_one()
+    returns single document as dictionary, for interaction. NOT A CURSOR	   hmm why does it always give you the first document (peep) ?
+
+foo.find( {'age':25} )
+
+there is No error when you try to find something thats not there. python None object
+
+LOGICAL OPERATIONz: '$and' '$or'and '$not'
+doo.find_one( {
+	        '$and' : [
+		       {'name' : 'bob'},
+		       {'age' : 25 }
+		       ]
+	     } )
+
+INEQUALITIEz
+$gt, $lt, $gte, $lte, $ne
+foo.find( {'age' : {'$gte': 21}} )
+
+foo.find_one(...)
+foo['name'] ...
