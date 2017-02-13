@@ -65,3 +65,35 @@ foo.find( {'age' : {'$gte': 21}} )
 
 foo.find_one(...)
 foo['name'] ...
+
+0208
+
+$mongo 149.89.150.100   
+
+>db.coll.find().pretty()
+
+.delete_one() #return deleteresult object 
+.delete_many()
+.update_one( query, operation )
+    '$set', '$unset', '$inc' <- youc an also increment -1!
+
+col.update_one( {'id': 'd'}, {'$set': {'name': 'francis'}} )
+
+
+0213
+
+HTML5: modern html redesign, designed around js and standardized DOM
+        includes built in support for audio and video
+	includes an element that can be drawn on ~~~canvas~~~
+   YOU MUST DECLARE WHAT CONTEXT YOU ARE DRAWING IN (2d, 3d, raw bitmap rendering,,)
+
+<canvas width="600" height="300" id="slate></canvas>
+var c = document.gEBI('slate');
+var ctx = c.getContext('2d'); //CONTEXT
+ctx.fillRect(50,75,100,200); //BLACK RECT
+ctx.fillStyle = '#ff00ff' ; //...
+ctx.fillRect...//NOW THE COLOR IS FF00FF!!!!
+
+ctx.clearRect( ... ) //u can clear whole canvas!!!!!
+
+//sadly theres no such thing as LAYERS : (
