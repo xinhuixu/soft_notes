@@ -97,3 +97,11 @@ ctx.fillRect...//NOW THE COLOR IS FF00FF!!!!
 ctx.clearRect( ... ) //u can clear whole canvas!!!!!
 
 //sadly theres no such thing as LAYERS : (
+
+0215
+
+var clear = function(e) {
+	e.preventDefault(); #prevents default behavior
+	ctx.clearRect(...);
+	ctx.beginPath();
+	started = false;
