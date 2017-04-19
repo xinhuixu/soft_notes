@@ -6,4 +6,10 @@ list comprehension
    [x*x for x in range(10)]
    [(x, x*x) ..] list of tuples
    [{x: x*x} ..] list of dicts
-   
+conditional 
+  [<value> for <var> in <list> if <condition>]
+  Java shorthand: a = a<0?0:a
+    if using {}longhand, cannot assign val
+  in PYthon: a = 0 if a<0 else a  
+  this is usable in lc only inthe First part..<value>..it is NOT treated in the list comprehension!! it is an assigned value. you don't really need it there!
+    [x if x%2=1 else 0 for x in range(10)] -> [0,1,0,3,0,5...]
