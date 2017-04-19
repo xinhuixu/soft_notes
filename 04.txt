@@ -1,0 +1,9 @@
+list comprehension
+  building lists out of existing lists
+   [<value> for <var> in <list>]
+   [5 for x in range(10)] -> [ 5,5,5... ]
+   x for x .. is useless: just range(10) is the list
+   [x*x for x in range(10)]
+   [(x, x*x) ..] list of tuples
+   [{x: x*x} ..] list of dicts
+   
