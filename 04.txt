@@ -18,3 +18,20 @@ range(3, 100, 3) -> all multiples of 3
 generate a list of non-prime (composite number)
 range(14, 100, 7)
 [y for x in range(2,10) for y in range(2*x,100,x)] *contains repeats
+
+{ c for c in s }
+
+closure
+
+def rep(s):
+  def times(x):
+    return s*x
+  return times
+  
+rep(hello)(3)
+
+b=rep('bye')
+b(3) -> 'byebyebye'
+
+def rep2(s):
+  return lambda x : s*x
