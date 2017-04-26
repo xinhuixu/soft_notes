@@ -19,9 +19,17 @@ generate a list of non-prime (composite number)
 range(14, 100, 7)
 [y for x in range(2,10) for y in range(2*x,100,x)] *contains repeats
 
-{ c for c in s }
+{ c for c in s } #makes dict
 
-closure
+def quicksort(l):
+  if len(l) <= 1:
+    return l
+  pivot = random.choice(l)
+  lower = [i for i in l if i < pivot]
+  upper = [i for i in l if i > pivot]
+  return quicksort(lower) + (l.count(pivot) * [pivot]) + quicksort(upper)
+  
+~closure~
 
 def rep(s):
   def times(x):
@@ -30,8 +38,21 @@ def rep(s):
   
 rep(hello)(3)
 
-b=rep('bye')
+b=rep('bye') #b is a Closure. it gets created here
 b(3) -> 'byebyebye'
 
-def rep2(s):
-  return lambda x : s*x
+def repL(s):
+  return lambda x, z, y #multiple args# : s*x
+  
+def greet():
+def header(f):
+
+g = header(greet)
+#WRONG# f = header(farewell())
+
+OR
+@header
+def greet():
+
+
+greet = header(greet)
