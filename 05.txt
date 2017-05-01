@@ -1,0 +1,8 @@
+MEMOIZATION (not typo), MAP, FILTER, REDUCE
+
+memoization is reducing the time it takes to complete an (often recursive) algo by saving PREV COMPUTED VALUES TO B USED LATER.
+use DECORATORS!
+
+if arg[0] not in vals:
+  vals[arg[0] = f(*arg
+return vals[arg
