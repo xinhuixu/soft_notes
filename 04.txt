@@ -56,3 +56,8 @@ def greet():
 
 
 greet = header(greet)
+
+*arg
+  tuple: arg[0], arg[1]
+**kwarg
+   dict
