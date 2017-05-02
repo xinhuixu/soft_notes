@@ -6,3 +6,13 @@ use DECORATORS!
 if arg[0] not in vals:
   vals[arg[0] = f(*arg
 return vals[arg
+
+map/filter/reduce
+Reduce(func, list) : compute some value based on a list
+    func must take TWO arguments...
+common usage: reduce(lambda a, b: a * b, l) #multiplies every element in list
+
+map(lambda x: x*2, l) #just list comprehension
+filter(lambda x: x%2 == 1, l) filter IN odds
+
+Hadoop: MapReduce framework
